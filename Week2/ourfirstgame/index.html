@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -8,26 +9,26 @@
 
     <h1 style="color: white; text-align: center; font-family: 'Courier New', Courier, monospace;">Prepare to enter the best Pokemon Region ever made.</h1>
 
-    <div style="text-align: center;">
-        <img style="width: 100vh;" src="./assets/Unova.jpg">
-    </div>
+    <div class="map-container" style="text-align: center;">
+        <img id="unova-map" style="width: 100vh;" src="./assets/Unova.jpg" alt="Unova Map">
 
-    <h2 style="color: white; text-align: center; font-family: 'Courier New', Courier, monospace;">Pick your path to glory.</h2>
+        <h2 id="path-text" style="color: white; text-align: center; font-family: 'Courier New', Courier, monospace;">Pick your path to glory.</h2>
+    </div>
 
     <div style="text-align: center;">
         <button style="background-color: white; border-radius: 50px; font-size: 20px; padding: 15px 30px; font-family: 'Courier New', Courier, monospace;"><a href="./game.html">Start</a></button>
     </div>
 
-    <section>
+    <section class="credits-section">
         <h2 style="color: white;text-align: center; font-family: 'Courier New', Courier, monospace;">Credits:</h2>
 
         <ul style="color: white; text-align: center; font-size: 24px; list-style-type: none;">
-            <li>Sprites: 
+            <li id="sprite-credit">Sprites: 
                 <a href="https://www.dragonflycave.com/resources/sprite-generator/">
                     <p>dragonflycave</p>
                 </a>
             </li>
-            <li>Unova Image:
+            <li id="image-credit">Unova Image:
                 <a href="https://bulbapedia.bulbagarden.net/wiki/Unova">
                     <p>bulbapedia</p>
                 </a>

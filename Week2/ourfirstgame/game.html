@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,18 +11,20 @@
         A wild Dragonite has appeared
     </h2>
 
-    <!-- Asked Gemini for help with getting the over the shoulder classic 2D look here on styling -->
-    <div>
-        <img src="./assets/dragonitefront.png" alt="Wild Dragonite" style="position: absolute; top: 15%; right: 15%; width: 30%; z-index: 1;">
+    <div class="2d-battle">
+        <img id="dragonite-sprite" src="./assets/dragonitefront.png" alt="Wild Dragonite" style="position: absolute; top: 15%; right: 15%; width: 30%; z-index: 1;">
 
-        <img src="./assets/Lucario.png" alt="Player Lucario" style="position: absolute; bottom: -5%; left: 10%; width: 45%; z-index: 2;">
+        <img id="lucario-sprite" src="./assets/Lucario.png" alt="Player Lucario" style="position: absolute; bottom: -5%; left: 10%; width: 45%; z-index: 2;">
     </div>
 
-    <div style="text-align: center;">
-        <button style="background-color: white; border-radius: 50px; font-size: 20px; padding: 15px 30px; font-family: 'Courier New', Courier, monospace;">Fight</button>
-        <button style="background-color: white; border-radius: 50px; font-size: 20px; padding: 15px 30px; font-family: 'Courier New', Courier, monospace;">Bag</button>
-        <button style="background-color: white; border-radius: 50px; font-size: 20px; padding: 15px 30px; font-family: 'Courier New', Courier, monospace;">Flee</button>
-        <button style="background-color: white; border-radius: 50px; font-size: 20px; padding: 15px 30px; font-family: 'Courier New', Courier, monospace;">Switch</button>
+    <div class="battle-menu" style="text-align: center;">
+        <button id="btn-fight" style="background-color: white; border-radius: 50px; font-size: 20px; padding: 15px 30px; font-family: 'Courier New', Courier, monospace;">Fight</button>
+
+        <button id="btn-bag" style="background-color: white; border-radius: 50px; font-size: 20px; padding: 15px 30px; font-family: 'Courier New', Courier, monospace;">Bag</button>
+
+        <button id="btn-flee" style="background-color: white; border-radius: 50px; font-size: 20px; padding: 15px 30px; font-family: 'Courier New', Courier, monospace;">Flee</button>
+
+        <button id="btn-switch" style="background-color: white; border-radius: 50px; font-size: 20px; padding: 15px 30px; font-family: 'Courier New', Courier, monospace;">Switch</button>
     </div>
 </body>
 </html>
