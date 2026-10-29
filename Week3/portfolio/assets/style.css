@@ -1,0 +1,223 @@
+:root {
+  --bg: #2B1F1A;
+  --mocha: #4B3832;
+  --surface: #5A453C;
+  --outline: #8C6A56;
+  --accent: #D9A066;
+  --accent-2: #5FB3A8;
+  --text-heading: #F5EBDD;
+  --text-body: #CDB9A5;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text-body);
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+header {
+  background: var(--mocha);
+  color: var(--text-heading);
+  font-family: 'Zilla Slab', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  padding: 1.25rem;
+  text-align: center;
+  border-bottom: 0.25rem solid var(--accent-2);
+}
+
+.quote-box {
+  background: var(--mocha);
+  border-left: 5px solid var(--accent);
+  margin: 2rem auto;
+  max-width: 700px;
+  padding: 1.5rem 2rem;
+  border-radius: 6px;
+}
+
+.quote-text {
+  color: var(--text-heading);
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.25rem;
+  font-style: italic;
+  margin: 0;
+  text-align: center;
+}
+
+.video-game-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 1rem 2rem 3rem;
+}
+
+.card {
+  box-sizing: border-box;
+  width: 500px;
+  height: 750px;
+  background-color: var(--surface);
+  border: 2px solid var(--outline);
+  padding: 36px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  border-color: var(--accent-2);
+}
+
+.card img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.card h1 {
+  font-family: 'Zilla Slab', serif;
+  color: var(--accent);
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.card p {
+  font-family: 'Zilla Slab', serif;
+  color: var(--text-body);
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+
+.card a {
+  display: block;
+  text-align: center;
+}
+
+.card-button {
+  background-color: var(--accent-2);
+  color: var(--bg);
+  font-family: 'Zilla Slab', serif;
+  font-weight: 700;
+  font-size: 1.25rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.card-button:hover {
+  background-color: var(--accent);
+}
+
+.timeline {
+  border-left: 3px solid var(--outline);
+  padding-left: 1.5rem;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: calc(-1.5rem - 9px);
+  top: 0.35rem;
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 50%;
+  box-shadow: 0 0 8px var(--accent-2);
+}
+
+.timeline-date {
+  color: var(--accent);
+  font-size: 0.85rem;
+  letter-spacing: 0.05em;
+}
+
+.timeline-item h4 {
+  color: var(--text-heading);
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.15rem;
+  margin: 0.25rem 0;
+}
+
+.timeline-item p {
+  margin: 0;
+}
+
+.fact-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.fact-card {
+  flex: 1 1 220px;
+  background: var(--surface);
+  border: 2px solid var(--outline);
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  transition: transform 0.2s, border-color 0.2s, box-shadow 0.2s;
+}
+
+.fact-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--accent);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+}
+
+.fact-card h4 {
+  color: var(--text-heading);
+  font-family: 'Zilla Slab', serif;
+  margin: 0 0 0.5rem;
+}
+
+.fact-card p {
+  margin: 0;
+}
+
+.section {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 2rem 2rem 1rem;
+}
+
+.section-title {
+  color: var(--text-heading);
+  font-family: 'Zilla Slab', serif;
+  font-size: 1.75rem;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--accent);
+  display: inline-block;
+}
+
+.career-box {
+  background: var(--mocha);
+  border-left: 5px solid var(--accent);
+  border-radius: 6px;
+  padding: 1.25rem 1.75rem;
+}
+
+.section:last-child {
+  padding-bottom: 3rem;
+}
+
+.career-text {
+  color: var(--text-heading);
+  margin-top: 0;
+}
+
+.career-item {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.4rem;
+}
