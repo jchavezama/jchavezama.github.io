@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Frieren: Beyond Journeys End</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Frieren: Beyond Journey’s End</h1>
+    <button id="menu-btn" aria-label="Toggle menu">☰</button>
+    <button id="theme-btn">Dark mode</button>
+  </header>
+
+  <nav id="menu" class="hidden">
+    <a href="#about">About</a>
+    <a href="#party">The Party</a>
+    <a href="#spells">Spell Wishlist</a>
+  </nav>
+
+  <main>
+    <section id="hero">
+      <h2 id="greeting">Hello!</h2>
+      <p>Welcome to a small fan website about my favorite main characters in all of Anime! A Powerful Mage whos lived over 1000 years!</p>
+    </section>
+
+    <section id="about">
+      <h2>About</h2>
+      <p>After defeating the Demon King, the hero’s party goes their separate ways. Frieren, an elf who lives for
+      over a thousand years, sets out on a new journey and slowly comes to understand the humans she traveled with.</p>
+    </section>
+
+    <section id="party">
+      <h2>The Party</h2>
+      <p class="hint">Hover over a card to learn more.</p>
+      <div class="cards">
+        <div class="card" data-info="Frieren: A elf mage who loves collecting spells, especially odd, useless ones. Sleeps in a lot. Takes all the time in the world because she has it, loves treasures and grimoires, and cant avoid Mimics for the life of her.">
+          <img src="assets/frieren.webp" alt="Frieren">
+          <p>Frieren</p>
+        </div>
+        <div class="card" data-info="Fern: Frieren’s disciplined apprentice. Practical, sharp, and quietly strict about sleep schedules. A quiet character with eyes like daggers and zoltraks like a Mac-10, she absolutely spins the block about hers.">
+          <img src="assets/fern.webp" alt="Fern">
+          <p>Fern</p>
+        </div>
+        <div class="card" data-info="Stark: A warrior trained by Eisen. Brave when it counts, even if he doesn’t feel brave. If he finds out he can tank your attacks, he will tank them.">
+          <img src="assets/stark.avif" alt="Stark">
+          <p>Stark</p>
+        </div>
+        <div class="card" data-info="Himmel: The hero who led the original party. His kindness shapes everything Frieren does. As well as being Frieren's love interest <3">
+          <img src="assets/himmel.avif" alt="Himmel">
+          <p>Himmel</p>
+        </div>
+      </div>
+      <div id="info-panel">Hover over a character!</div>
+    </section>
+
+    <section id="spells">
+      <h2>Spell Wishlist</h2>
+      <p class="hint">Frieren loves collecting spells. What would you add? Click a spell to mark it as learned.</p>
+      <form id="spell-form">
+        <input type="text" id="spell-input" placeholder="e.g. Spell that makes flowers bloom" autocomplete="off">
+        <button type="submit">Add</button>
+      </form>
+      <p id="spell-msg"></p>
+      <ul id="spell-list"></ul>
+    </section>
+  </main>
+
+  <footer>A website made by a fan of Frieren </footer>
+  <script src="main.js"></script>
+</body>
+</html>

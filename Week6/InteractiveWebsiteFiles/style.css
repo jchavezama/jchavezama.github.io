@@ -1,0 +1,231 @@
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #f4f1ff;
+  color: #2b2540;
+}
+
+h2 {
+  color: #5a4bb5;
+  border-bottom: 2px solid #d9d2f7;
+}
+
+main {
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+.hint {
+  font-style: italic;
+}
+
+header {
+  background-color: #7b6cd9;
+  color: white;
+  padding: 15px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header h1 {
+  font-size: 22px;
+  margin: 0;
+}
+
+button {
+  background-color: white;
+  color: #3a2f80;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 14px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+button:hover {
+  background-color: #d9d2f7;
+}
+
+nav {
+  background-color: #d9d2f7;
+  padding: 12px;
+  text-align: center;
+}
+
+nav a {
+  color: #5a4bb5;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hidden {
+  display: none;
+}
+
+#hero {
+  background-color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+#greeting {
+  font-size: 32px;
+  border-bottom: none;
+}
+
+.cards {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border: 2px solid #d9d2f7;
+  border-radius: 10px;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.card p {
+  margin: 10px 0 0 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.card:hover {
+  border-color: #7b6cd9;
+  background-color: #ece8ff;
+}
+
+.card:hover img {
+  opacity: 0.85;
+}
+
+#info-panel {
+  background-color: #d9d2f7;
+  border-left: 5px solid #7b6cd9;
+  border-radius: 6px;
+  padding: 15px;
+  margin-top: 15px;
+}
+
+#spell-form {
+  display: flex;
+  gap: 8px;
+}
+
+#spell-input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 2px solid #d9d2f7;
+  border-radius: 6px;
+}
+
+#spell-input.focused {
+  border-color: #7b6cd9;
+  outline: none;
+  background-color: #f7f5ff;
+}
+
+#spell-form button {
+  background-color: #7b6cd9;
+  color: white;
+}
+
+#spell-form button:hover {
+  background-color: #5a4bb5;
+}
+
+#spell-msg {
+  color: red;
+}
+
+#spell-list {
+  list-style: none;
+  padding: 0;
+}
+
+#spell-list li {
+  background-color: white;
+  border: 1px solid #d9d2f7;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+
+#spell-list li.done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+footer {
+  background-color: #d9d2f7;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+
+body.night {
+  background-color: #17142b;
+  color: #ece8ff;
+}
+
+body.night h2 {
+  color: #c9bfff;
+  border-bottom: 2px solid #302a58;
+}
+
+body.night #hero,
+body.night .card,
+body.night #spell-list li {
+  background-color: #251f45;
+  border-color: #302a58;
+  color: #ece8ff;
+}
+
+body.night .card:hover {
+  background-color: #302a58;
+  border-color: #a99bff;
+}
+
+body.night #info-panel,
+body.night nav,
+body.night footer {
+  background-color: #302a58;
+}
+
+body.night nav a {
+  color: #c9bfff;
+}
+
+body.night #spell-input {
+  background-color: #251f45;
+  color: #ece8ff;
+  border-color: #302a58;
+}
